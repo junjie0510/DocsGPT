@@ -28,7 +28,7 @@
 ## 预览
 ![example-of-docs-gpt](https://jsdelivr.icloudnative.io/gh/yangchuansheng/imghosting5@main/uPic/2023-02-14-15-11-zRaWJD.png)
 
-## [在线体验](https://docsgpt.arc53.com/)
+## [在线体验](https://docsgpt.icloudnative.io/)
 
 ## [加入 Discord](https://discord.gg/n5BX8dh8rU)
 
