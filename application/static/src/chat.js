@@ -11,7 +11,7 @@ if (el) {
         let chatWindow = document.getElementById("messages-container");
         chatWindow.scrollTop = chatWindow.scrollHeight;
         document.getElementById("message-input").value = "";
-        document.getElementById("button-submit").innerHTML = '<i class="fa fa-circle-o-notch fa-spin"></i> Thinking...';
+        document.getElementById("button-submit").innerHTML = '<i class="fa fa-circle-o-notch fa-spin"></i> 正在思考中...';
         document.getElementById("button-submit").disabled = true;
         if (localStorage.getItem('activeDocs') == null) {
             localStorage.setItem('activeDocs', 'default')

@@ -3,13 +3,13 @@
 </h1>
 
 <p align="center">
-  <strong>Open-Source Documentation Assistant</strong>
+  <strong>智能开源项目文档小助手</strong>
 </p>
 
 <p align="left">
-  <strong>DocsGPT</strong> is a cutting-edge open-source solution that streamlines the process of finding information in project documentation. With its integration of the powerful <strong>GPT</strong> models, developers can easily ask questions about a project and receive accurate answers.
+  <strong>DocsGPT</strong> 是一个顶尖的开源解决方案，它简化了在项目文档中寻找信息的过程。由于它集成了强大的 <strong>GPT</strong> 模型，开发人员可以轻松地提出文档涉及的相关项目的问题，并得到准确的答案。
   
-Say goodbye to time-consuming manual searches, and let <strong>DocsGPT</strong> help you quickly find the information you need. Try it out and see how it revolutionizes your project documentation experience. Contribute to its development and be a part of the future of AI-powered assistance.
+告别耗时的手动搜索，让 <strong>DocsGPT</strong> 帮助你快速找到需要的信息。它将彻底改变你的项目文档使用体验。欢迎为该项目做出贡献，打造更强大的人工智能助手。
 </p>
 
 <div align="center">
@@ -23,43 +23,45 @@ Say goodbye to time-consuming manual searches, and let <strong>DocsGPT</strong> 
 
 ## Roadmap
 
-You can find our [Roadmap](https://github.com/orgs/arc53/projects/2) here, please don't hesitate contributing or creating issues, it helps us make DocsGPT better!
+你可以在这里找到我们的 Roadmap，欢迎提交代码或创建 Issue，这将有助于我们打造更强大的 DocsGPT!
 
-## Preview
+## 预览
 ![video-example-of-docs-gpt](https://d3dg1063dc54p9.cloudfront.net/videos/demo.gif)
 
-## [Live preview](https://docsgpt.arc53.com/)
+## [在线体验](https://docsgpt.arc53.com/)
 
-## [Join Our Discord](https://discord.gg/n5BX8dh8rU)
+## [加入 Discord](https://discord.gg/n5BX8dh8rU)
 
 
-## Project structure
-- Application - flask app (main application)
+## 项目结构
 
-- Extensions - chrome extension
+- Application - flask 应用（主应用程序）
 
-- Scripts - script that creates similarity search index and store for other libraries. 
+- Extensions - chrome 扩展
 
-## QuickStart
-Please note: current vector database uses pandas Python documentation, thus responses will be related to it, if you want to use other docs please follow a guide below
+- Scripts - 为其他文档创建相似度搜索索引和存储的脚本。
 
-1. Navigate to `/application` folder
-2. Install dependencies
+## 快速开始
+
+注意：目前的矢量数据库使用的是 [laf](https://www.lafyun.com/) 文档，因此响应将与该文档相关，如果你想使用其他文档，请遵循以下指南
+
+1. 进入 `/application` 目录
+2. 安装依赖
 `pip install -r requirements.txt`
-3. Prepare .env file
-Copy .env_sample and create .env with your openai api token
-4. Run the app
+1. 准备 .env 文件
+将 .env_sample 复制并重命名为 .env，将 OpenAI API Key 填到 .env 中
+1. 运行应用
 `python app.py`
 
 
-[How to install the Chrome extension](https://github.com/arc53/docsgpt/wiki#launch-chrome-extension)
+[如何安装 Chrome 扩展](https://github.com/arc53/docsgpt/wiki#launch-chrome-extension)
 
 
-## [Guides](https://github.com/arc53/docsgpt/wiki)
+## [文档](https://github.com/arc53/docsgpt/wiki)
 
 
 
-## [How to use any other documentation](https://github.com/arc53/docsgpt/wiki/How-to-train-on-other-documentation)
+## [如何使用其他文档库](https://github.com/arc53/docsgpt/wiki/How-to-train-on-other-documentation)
 
-Built with [🦜️🔗 LangChain](https://github.com/hwchase17/langchain)
+基于 [🦜️🔗 LangChain](https://github.com/hwchase17/langchain) 构建
 
