@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DocsGPT 🦖 Preview</title>
+    <title>DocsGPT 🦖 智能文档小助手</title>
     <link href="{{url_for('static',filename='dist/css/output.css')}}" rel="stylesheet">
       <link rel="favicon" href="{{ url_for('static', filename='favicon/favicon.ico') }}">
       <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}">
@@ -22,7 +22,7 @@
     <header class="bg-white p-2 flex justify-between items-center">
       <h1 class="text-lg font-medium">DocsGPT 🦖 智能文档小助手</h1>
         <div>
-      <a href="https://github.com/arc53/docsgpt" class="text-blue-500 hover:text-blue-800 text-sm">About</a>
+      <a href="https://github.com/arc53/docsgpt" class="text-blue-500 hover:text-blue-800 text-sm">关于</a>
             {% if not api_key_set %}
       <button class="text-sm text-yellow-500 hover:text-yellow-800" onclick="resetApiKey()">Reset Key</button>
         {% endif %}
@@ -46,7 +46,7 @@ laf 是一个开源的 BaaS 开发平台（Backend as a Service)<br>
 laf 是一个开箱即用的 Serverless 开发平台<br>
 laf 是一个集「函数计算」、「数据库」、「对象存储」等于一身的一站式开发平台<br>
 laf 可以是开源版的腾讯云开发、开源版的 Google Firebase<br>
-简而言之,laf 是一个 serverless 框架，提供开箱即用的云函数，云数据库，对象存储等能力，是一个一站式开发平台，像写博客一样写代码！ </p>
+简而言之，laf 是一个 serverless 框架，提供开箱即用的云函数，云数据库，对象存储等能力，是一个一站式开发平台，像写博客一样写代码！ </p>
               </div>
 
           </div>
@@ -66,7 +66,7 @@ laf 可以是开源版的腾讯云开发、开源版的 Google Firebase<br>
           <p class="text-sm">这是一个使用 GPT-3、Faiss 和 <a href="https://github.com/hwchase17/langchain" class="text-blue-500 hover:text-blue-800">LangChain</a> 来回答问题的聊天机器人</p>
           <br>
           <p class="text-sm">源代码在 <a href="https://github.com/arc53/docsgpt" class="text-blue-500 hover:text-blue-800">Github 仓库</a> 中</p><br>
-          <p class="text-sm">目前使用 <a href="https://github.com/labring/laf" class="text-blue-500 hover:text-blue-800">laf</a> 文档，所以会回复 laf 相关的信息。如果你想使用不同的文档训练它 - <a href="https://github.com/arc53/docsgpt/wiki/How-to-train-on-other-documentation" class="text-blue-500 hover:text-blue-800">请参考这篇指南</a></p><br>
+          <p class="text-sm">目前使用 <a href="https://github.com/labring/laf" class="text-blue-500 hover:text-blue-800">laf</a> 文档，所以会回复 laf 相关的信息。如果你想使用不同的文档来训练它 - <a href="https://github.com/arc53/docsgpt/wiki/How-to-train-on-other-documentation" class="text-blue-500 hover:text-blue-800">请参考这篇指南</a></p><br>
           <p class="text-sm">如果您想在自己的服务器上运行 - <a href="https://github.com/arc53/docsgpt/wiki/How-to-train-on-other-documentation" class="text-blue-500 hover:text-blue-800"> 请参考这篇指南 </a></p><br>
             <label  class="block mb-2 text-sm font-medium text-gray-900">从 DocsHUB 中选择文档</label>
             <select id="select-docs" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
