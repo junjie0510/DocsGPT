@@ -20,7 +20,7 @@
 
 
     <header class="bg-white p-2 flex justify-between items-center">
-      <h1 class="text-lg font-medium">DocsGPT 🦖 Preview</h1>
+      <h1 class="text-lg font-medium">DocsGPT 🦖 智能文档小助手</h1>
         <div>
       <a href="https://github.com/arc53/docsgpt" class="text-blue-500 hover:text-blue-800 text-sm">About</a>
             {% if not api_key_set %}
@@ -35,18 +35,18 @@
 
             <div id="messages" class="w-full flex flex-col mt-2" >
               <div class="bg-indigo-500 text-white p-2 rounded-lg mb-2 self-start">
-                <p class="text-sm">Hello, ask me anything about this library. Im here to help</p>
+                <p class="text-sm">你好，请向我询问有关这个文档的任何问题</p>
               </div>
               <div class="bg-blue-500 text-white p-2 rounded-lg mb-2 self-end">
-                <p class="text-sm">How to merge tables?</p>
+                <p class="text-sm">laf 是什么？</p>
               </div>
               <div class="bg-indigo-500 text-white p-2 rounded-lg mb-2 self-start">
-                <p class="text-sm">To merge two tables in pandas, you can use the pd.merge() function. The basic syntax is:<br>
-pd.merge(left, right, on, how)<br>
-where left and right are the two tables to merge, on is the column to merge on, and how is the type of merge to perform.<br>
-For example, to merge the two tables df1 and df2 on the column 'key', you can use:<br>
-pd.merge(df1, df2, on='key', how='left')<br>
-This will return a new DataFrame with all the columns from both tables, and only the rows that match the 'key' column. </p>
+                <p class="text-sm">laf 是云开发平台，可以快速的开发应用<br>
+laf 是一个开源的 BaaS 开发平台（Backend as a Service)<br>
+laf 是一个开箱即用的 Serverless 开发平台<br>
+laf 是一个集「函数计算」、「数据库」、「对象存储」等于一身的一站式开发平台<br>
+laf 可以是开源版的腾讯云开发、开源版的 Google Firebase<br>
+简而言之,laf 是一个 serverless 框架，提供开箱即用的云函数，云数据库，对象存储等能力，是一个一站式开发平台，像写博客一样写代码！ </p>
               </div>
 
           </div>
@@ -55,7 +55,7 @@ This will return a new DataFrame with all the columns from both tables, and only
         <div class="fixed bottom-0 w-full mt-4 mb-2 lg:w-3/4">
         <form id="message-form" autocomplete="off" class="flex items-stretch">
           <input autocomplete="off" id="message-input" class="bg-white p-2 rounded-lg ml-2 text-sm w-full" type="text" placeholder="Type your message here...">
-          <button id="button-submit" class="bg-blue-500 text-white p-2 rounded-lg ml-2 mr-2 text-sm sm:max-lg:p-5" type="submit">Send</button>
+          <button id="button-submit" class="bg-blue-500 text-white p-2 rounded-lg ml-2 mr-2 text-sm sm:max-lg:p-5" type="submit">发送</button>
         </form>
         </div>
 
@@ -63,14 +63,14 @@ This will return a new DataFrame with all the columns from both tables, and only
     </div>
         </div>
         <div class="lg:w-1/4 p-2 sm:max-lg:hidden">
-          <p class="text-sm">This is a chatbot that uses the GPT-3, Faiss and <a href="https://github.com/hwchase17/langchain" class="text-blue-500 hover:text-blue-800">LangChain</a> to answer questions</p>
+          <p class="text-sm">这是一个使用 GPT-3、Faiss 和 <a href="https://github.com/hwchase17/langchain" class="text-blue-500 hover:text-blue-800">LangChain</a> 来回答问题的聊天机器人</p>
           <br>
-          <p class="text-sm">The source code is available on <a href="https://github.com/arc53/docsgpt" class="text-blue-500 hover:text-blue-800">Github</a></p><br>
-          <p class="text-sm">Currently It uses python pandas documentation, so it will respond to information relevant to pandas. If you want to train it on different documentation -  <a href="https://github.com/arc53/docsgpt/wiki/How-to-train-on-other-documentation" class="text-blue-500 hover:text-blue-800"> please follow this guide </a></p><br>
-          <p class="text-sm">If you want to launch it on your own server - <a href="https://github.com/arc53/docsgpt/wiki/How-to-train-on-other-documentation" class="text-blue-500 hover:text-blue-800"> follow this guide </a></p><br>
-            <label  class="block mb-2 text-sm font-medium text-gray-900">Select documentation from DocsHUB</label>
+          <p class="text-sm">源代码在 <a href="https://github.com/arc53/docsgpt" class="text-blue-500 hover:text-blue-800">Github 仓库</a> 中</p><br>
+          <p class="text-sm">目前使用 <a href="https://github.com/labring/laf" class="text-blue-500 hover:text-blue-800">laf</a> 文档，所以会回复 laf 相关的信息。如果你想使用不同的文档训练它 - <a href="https://github.com/arc53/docsgpt/wiki/How-to-train-on-other-documentation" class="text-blue-500 hover:text-blue-800">请参考这篇指南</a></p><br>
+          <p class="text-sm">如果您想在自己的服务器上运行 - <a href="https://github.com/arc53/docsgpt/wiki/How-to-train-on-other-documentation" class="text-blue-500 hover:text-blue-800"> 请参考这篇指南 </a></p><br>
+            <label  class="block mb-2 text-sm font-medium text-gray-900">从 DocsHUB 中选择文档</label>
             <select id="select-docs" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
-              <option selected value="default">Choose documentation</option>
+              <option selected value="default">选择文档</option>
               <option value="default">Default</option>
             </select>
         </div>
@@ -90,14 +90,14 @@ This will return a new DataFrame with all the columns from both tables, and only
     <div class=" text-sm inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
        <form id="api-key-form">
         <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-        <h2>Before you can start using DocsGPT we need you to provide an API key for llm. Currently, we support only OpenAI but soon many more. You can find it <a class="text-blue-500 hover:text-blue-800" href="https://platform.openai.com/account/api-keys">here</a></h2><br>
-        <label>OpenAI API key:</label>
+        <h2>在开始使用 DocsGPT 之前，需要提供一个 llm 的 API Key。目前只支持 OpenAI，后面会支持更多的选项。你可以在 <a class="text-blue-500 hover:text-blue-800" href="https://platform.openai.com/account/api-keys">这里</a>找到 API Key</h2><br>
+        <label>OpenAI API Key:</label>
 
         <input id="api-key-input" type="password" class="w-full bg-gray-100 p-2 mt-2 mb-3" placeholder="Paste you Api Key here">
 
       </div>
       <div class="bg-gray-200 px-4 py-3 text-right">
-        <button type="submit" class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 mr-2">Save</button>
+        <button type="submit" class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 mr-2">保存</button>
 
       </div>
             </form>
