@@ -26,7 +26,7 @@
 你可以在这里找到我们的 Roadmap，欢迎提交代码或创建 Issue，这将有助于我们打造更强大的 DocsGPT!
 
 ## 预览
-![video-example-of-docs-gpt](https://d3dg1063dc54p9.cloudfront.net/videos/demo.gif)
+![example-of-docs-gpt](https://jsdelivr.icloudnative.io/gh/yangchuansheng/imghosting5@main/uPic/2023-02-14-15-11-zRaWJD.png)
 
 ## [在线体验](https://docsgpt.arc53.com/)
 
