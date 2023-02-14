@@ -1,4 +1,4 @@
-name: Build and push DocsGPT Docker image
+name: Build and push DocsGPT zh-cn Docker image
 
 on:
   workflow_dispatch:
