@@ -22,9 +22,9 @@
     <header class="bg-white p-2 flex justify-between items-center">
       <h1 class="text-lg font-medium">DocsGPT 🦖 智能文档小助手</h1>
         <div>
-      <a href="https://github.com/arc53/docsgpt" class="text-blue-500 hover:text-blue-800 text-sm">关于</a>
+      Powered by <a href="https://icloudnative.io" class="text-blue-500 hover:text-blue-800 text-sm">云原生实验室</a>
             {% if not api_key_set %}
-      <button class="text-sm text-yellow-500 hover:text-yellow-800" onclick="resetApiKey()">Reset Key</button>
+      <button class="text-sm text-yellow-500 hover:text-yellow-800" onclick="resetApiKey()">重置 Key</button>
         {% endif %}
             </div>
     </header>
@@ -90,7 +90,7 @@ laf 可以是开源版的腾讯云开发、开源版的 Google Firebase<br>
     <div class=" text-sm inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
        <form id="api-key-form">
         <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-        <h2>在开始使用 DocsGPT 之前，需要提供一个 llm 的 API Key。目前只支持 OpenAI，后面会支持更多的选项。你可以在 <a class="text-blue-500 hover:text-blue-800" href="https://platform.openai.com/account/api-keys">这里</a>找到 API Key</h2><br>
+        <h2>在开始使用 DocsGPT 之前，需要提供一个 llm 的 API Key。目前只支持 OpenAI，后面会支持更多的选项。你可以在<a class="text-blue-500 hover:text-blue-800" href="https://platform.openai.com/account/api-keys">这里</a>找到 API Key</h2><br>
         <label>OpenAI API Key:</label>
 
         <input id="api-key-input" type="password" class="w-full bg-gray-100 p-2 mt-2 mb-3" placeholder="Paste you Api Key here">
