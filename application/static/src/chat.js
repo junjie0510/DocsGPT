@@ -36,12 +36,12 @@ if (el) {
                 document.getElementById("messages").innerHTML += msg_html;
                 let chatWindow = document.getElementById("messages-container");
                 chatWindow.scrollTop = chatWindow.scrollHeight;
-                document.getElementById("button-submit").innerHTML = 'Send';
+                document.getElementById("button-submit").innerHTML = '发送';
                 document.getElementById("button-submit").disabled = false;
             })
             .catch((error) => {
                 console.error('Error:', error);
-                document.getElementById("button-submit").innerHTML = 'Send';
+                document.getElementById("button-submit").innerHTML = '发送';
                 document.getElementById("button-submit").disabled = false;
             });
 
