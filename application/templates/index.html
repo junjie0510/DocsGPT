@@ -134,11 +134,19 @@ laf 可以是开源版的腾讯云开发、开源版的 Google Firebase<br>
                         option.text = docsIndex[key].name + " " + docsIndex[key].version;
                         option.value = docsIndex[key].name + "/" + ".project" + "/" + docsIndex[key].version + "/";
                         select.add(option);
+                        option.value = docsIndex[key].name + "/" + ".project" + "/" + docsIndex[key].version + "/{{ embeddings_choice }}/";
+                        if (docsIndex[key].model == "{{ embeddings_choice }}") {
+                            select.add(option);
+                        }
                     }
                     else {
                         option.text = docsIndex[key].name + " " + docsIndex[key].version;
                         option.value = docsIndex[key].language + "/" + docsIndex[key].name + "/" + docsIndex[key].version + "/";
                         select.add(option);
+                        option.value = docsIndex[key].language + "/" + docsIndex[key].name + "/" + docsIndex[key].version + "/{{ embeddings_choice }}/";
+                        if (docsIndex[key].model == "{{ embeddings_choice }}") {
+                            select.add(option);
+                        }
                     }
                 }
 
