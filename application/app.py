@@ -141,7 +141,7 @@ def check_docs():
     if os.path.exists(vectorstore):
         return {"status": 'exists'}
     else:
-        r = requests.get(base_path + vectorstore + "docs.index")
+        r = requests.get(base_path + vectorstore + "index.faiss")
         # save to vectors directory
         # check if the directory exists
         if not os.path.exists(vectorstore):
@@ -150,8 +150,8 @@ def check_docs():
         with open(vectorstore + "docs.index", "wb") as f:
             f.write(r.content)
         # download the store
-        r = requests.get(base_path + vectorstore + "faiss_store.pkl")
-        with open(vectorstore + "faiss_store.pkl", "wb") as f:
+        r = requests.get(base_path + vectorstore + "index.pkl")
+        with open(vectorstore + "index.pkl", "wb") as f:
             f.write(r.content)
 
         return {"status": 'loaded'}
