@@ -93,7 +93,7 @@ laf 可以是开源版的腾讯云开发、开源版的 Google Firebase<br>
        <form id="api-key-form">
         <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
         <h2>在开始使用 DocsGPT 之前，需要提供一个 llm 的 API Key。目前只支持 OpenAI，后面会支持更多的选项。你可以在<a class="text-blue-500 hover:text-blue-800" href="https://platform.openai.com/account/api-keys">这里</a>找到 API Key</h2><br>
-        <label>OpenAI API Key:</label>
+        <label>OpenAI API key:</label>
 
         <input id="api-key-input" type="password" class="w-full bg-gray-100 p-2 mt-2 mb-3" placeholder="Paste you Api Key here">
 
@@ -133,8 +133,6 @@ laf 可以是开源版的腾讯云开发、开源版的 Google Firebase<br>
                     var option = document.createElement("option");
                     if (docsIndex[key].name == docsIndex[key].language) {
                         option.text = docsIndex[key].name + " " + docsIndex[key].version;
-                        option.value = docsIndex[key].name + "/" + ".project" + "/" + docsIndex[key].version + "/";
-                        select.add(option);
                         option.value = docsIndex[key].name + "/" + ".project" + "/" + docsIndex[key].version + "/{{ embeddings_choice }}/";
                         if (docsIndex[key].model == "{{ embeddings_choice }}") {
                             select.add(option);
@@ -142,8 +140,6 @@ laf 可以是开源版的腾讯云开发、开源版的 Google Firebase<br>
                     }
                     else {
                         option.text = docsIndex[key].name + " " + docsIndex[key].version;
-                        option.value = docsIndex[key].language + "/" + docsIndex[key].name + "/" + docsIndex[key].version + "/";
-                        select.add(option);
                         option.value = docsIndex[key].language + "/" + docsIndex[key].name + "/" + docsIndex[key].version + "/{{ embeddings_choice }}/";
                         if (docsIndex[key].model == "{{ embeddings_choice }}") {
                             select.add(option);
